@@ -1,0 +1,469 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Mooli&display=swap");
+@media (min-width:576px) {
+
+    body {
+    min-height: 100dvh;
+    overflow-x: hidden;
+    background: #fff;
+    font-family: "Mooli", sans-serif;
+    background-color: #ffffff;
+}
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+h1{
+    font-family: "Comfortaa", cursive;
+}
+
+.logo {
+    color: #112434;
+    font-weight: 700;
+    font-size: clamp(1.1rem, 6vw, 1.7rem);
+    text-decoration: none;
+}
+
+.button-34 {
+    background: #5E5DF0;
+    border-radius: 999px;
+    box-shadow: #5E5DF0 0 10px 20px -10px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    opacity: 1;
+    outline: 0 solid transparent;
+    padding: 8px 18px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: fit-content;
+    word-break: break-word;
+    border: 0;
+  }
+.navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    
+}
+
+.navigation li {
+    list-style: none;
+    margin-left: 20px;
+}
+
+.navigation li a {
+    text-decoration: none;
+    padding: 7px 15px;
+    color: #12212e;
+    border-radius: 20px;
+    font-size: clamp(0.9rem, 6vw, 1rem);
+}
+
+.white{
+    background: rgb(216, 255, 124);
+    padding: 5px;
+    padding-right: 20px;
+}
+
+.navigation li a:hover,
+.navigation li a.active {
+    background: #112434;
+    color: #fff;
+}
+
+.parallax {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 140dvh;
+    background: rgb(206, 245, 223);
+    background: radial-gradient(circle,
+            rgba(63, 212, 17, 0.4) 35%,
+            rgb(198, 241, 128) 68%);
+}
+
+
+.parallax img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+}
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 25px;
+    right: 35px;
+    z-index: 90;
+    font-size: 11px;
+    border: none;
+    outline: none;
+    background-color: rgb(13, 247, 157);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    padding: 19px;
+    border-radius: 4px;
+  }
+  
+  #myBtn:hover {
+    background-color: #ffffff;
+  }
+
+#title {
+    position: absolute;
+    top: 13%;
+    font-size: clamp(2rem, 6vw, 4rem);
+    color: #000;
+    z-index: 50;
+}
+
+.blog {
+    position: relative;
+    padding: 120px 150px 20px;
+    background: #f6f0e7;
+    width: 100%;
+}
+
+.blog::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: rgb(246, 240, 231);
+    background: radial-gradient(circle,
+            rgba(246, 240, 231, 1) 54%,
+            rgba(0, 114, 125, 1) 99%);
+    z-index: 99;
+}
+
+.blog h2 {
+    font-size: clamp(2rem, 6vw, 3rem);
+    color: #000;
+    margin: 60px 0 40px;
+    text-align: center;
+}
+
+.blog p {
+    font-size: clamp(1rem, 6vw, 1.3rem);
+    color: #000;
+    font-weight: 400;
+    margin-bottom: 30px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+
+.cards {
+    display: grid;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    padding: 60px 60px;
+    background: #f6f0e7;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: min(100%, 450px);
+    background-color: #fff;
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    padding: 30px 40px;
+}
+
+.card img {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.card h3 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin: 20px 0 20px;
+    text-align: center;
+    color: #000;
+}
+
+.card p {
+    font-size: 1rem;
+    text-align: justify;
+    line-height: 1.5;
+    color: #000;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom,
+            rgba(206, 245, 223, 0.9),
+            rgba(164, 209, 198, 0.9),
+            rgba(128, 173, 172, 0.9),
+            rgba(72, 161, 170, 0.9));
+    border-radius: 20px;
+    list-style: none;
+    z-index: 1;
+    opacity: 0;
+    padding: 20px 40px;
+    transition: all 0.4s ease-in-out;
+}
+
+.overlay:hover {
+    opacity: 1;
+    cursor: default;
+}
+
+.main {
+    width: 100%;
+    background-position: left;
+    background-size: cover;
+    height: 100vh;
+}
+
+header { 
+        position: fixed;
+        top: 0;
+        left: 0;
+        /* background: white; */
+        width: 100%;
+        padding: 20px 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 100;
+        
+}
+
+header ul{
+    position: relative;
+    display: flex;
+    Justify-content: center;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 20px ;
+    width: 100%;
+    padding: 20px 15px;
+    padding-right: 40px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 100;
+    transition: 1s ease
+}
+h1 {
+    margin: 0;
+}
+
+.language-list {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    filter: drop-shadow(20px 30px 80px rgb(68, 18, 247));
+}
+
+.image_js {
+    /* float: right; */
+    padding: 0px;
+
+}
+
+.image_py {
+    /* float: right; */
+    padding: 0px;
+    margin: 0;
+}
+
+.language {
+    background: #000000;
+    color: aqua;
+    border: 1px solid #2dbd40;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 15px;
+    cursor: pointer;
+    transition: background 0.3s;
+
+}
+
+.language:hover {
+    background: #383e41;
+}
+
+
+.details {
+    margin-top: 10px;
+}
+
+
+.hidden {
+    display: none;
+}
+/* About */
+
+.about{
+    background-color: rgb(31, 168, 231);
+    padding: 0px 0px;
+    width: 100%;
+}
+.about-text{
+    width: 1260px;
+    padding: 0px;
+  font-size:x-large;
+  margin: 30px;
+}
+.main2{
+  /* width: 1120px; */
+  max-width: 95%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+.about-text h2{
+    color: #ffffff;
+    font-size: 45px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.about-text h2 span{
+    color: hsl(310, 88%, 46%);
+}
+.about-text h4{
+    font-size: larger;
+    color: #000000;
+}
+
+.about-text p {
+    font-size: 2 px;
+}
+.button{
+    background-color: #f9004d;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    border: 4px solid ;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 30px;
+    transition: .3s;
+}
+.button :hover {
+    background-color: transparent;
+    border: 2px solid #160c0f;
+    cursor: pointer;
+}
+/* Contact */
+.Contact{
+    background-color: #a4afaf;
+    padding: 10px;
+    color: #020101;
+    
+
+}
+.fa-location-dot{
+    font-size: 16px;
+    padding: 14px;
+
+}
+
+.add{
+    font-family:serif ;
+    font-size: larger;
+    margin: 13px;
+}
+.add1{
+    font-family:serif ;
+    font-size: 20px;
+    margin: 12px;
+}
+
+
+.text1{
+    font-size: 30px;
+    color: rgb(43, 34, 34);
+}
+.fa-square-instagram{
+    padding: 11px;
+    padding-right: 15px;
+    margin: 15px;
+    margin-left: 20px;
+    margin-top: 1px;
+}
+.fa-envelope{
+    margin: 13px;
+    font-size: 17px;
+}
+.fa-phone{
+    margin: 13px;
+    font-size: 16px;
+}
+.icon{
+    margin-left: 12px;
+    margin-bottom: 12px;
+}
+.fa-twitter{
+    margin-right: -1px;
+    margin-left: -12px;
+    
+}
+.fa-github{
+    margin-left: -10px;
+}
+.fa-facebook{
+    margin-left: 14px;
+}
+.fa-linkedin{
+    margin-left: 14px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #000000;
+    color: #ffffff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+
+
+
+
