@@ -6,18 +6,6 @@ function toggleDetails(detailsId) {
         detailsElement.classList.add('hidden');
     }
 }
-let split = new SplitText("#title");
-gsap.from("#leftfish", {
-            scrollTrigger: {
-                scrub: true,
-            },
-            x: -150,
-        });
 
-        gsap.from("#rightfish", {
-            scrollTrigger: {
-                scrub: true,
-            },
-            x: 200,
-        });
-        
+
+
